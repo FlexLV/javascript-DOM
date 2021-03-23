@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmēšanas 3 uzdevums</title>
+</head>
+<body>
+
+    <div class="pazud">
+        Kā mani sauc?
+    </div>
+
+    <div class="pazud">
+        Kāds ir mans uzvārds?
+    </div>
+
+    <div class="paradas" style="display: none;">
+        Mani sauc Ernests
+    </div>
+
+    <div class="paradas" style=display:none;>
+        mans uzvārds ir Dejus.
+    </div>
+
+    <button id="poga">Atbildes</button>
+
+
+    
+    <script type="text/javascript">
+
+const hideMeElements = document.querySelectorAll(".paradas")
+const button = document.querySelector("#poga")
+
+
+button.addEventListener('click', function(e) {
+    hideMeElements.forEach(function(element) {
+        element.style.display = "initial";
+        
+
+    })
+})
+
+        </script>
+</body>
+</html>
